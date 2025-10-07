@@ -4,8 +4,6 @@ This repository contains the implementation of a CLIP-style dual-encoder model f
 
 The final output is an interactive web demo built with Gradio, where a user can upload an image and provide a list of custom text labels to receive a zero-shot prediction.
 
-![Gradio Demo Screenshot](link_to_your_demo_screenshot.png)
-*(**Note:** You should take a screenshot of your working Gradio interface and add it to your repository, then replace the link above.)*
 
 ## Project Overview
 
@@ -22,9 +20,6 @@ The model is composed of two main pathways that are trained in parallel:
 2.  **Text Encoder**: A pre-trained **DistilBERT** model (from Hugging Face `transformers`) is used to extract feature embeddings from text captions. The embedding corresponding to the `[CLS]` token is used, producing a 768-dimensional vector.
 
 3.  **Projection Heads**: Two separate Multi-Layer Perceptrons (MLPs) are attached to the outputs of the encoders. These heads project the image and text features into a shared, lower-dimensional space (256 dimensions), where their similarity can be directly compared using cosine similarity.
-
-![Model Architecture Diagram](link_to_your_architecture_diagram.png)
-*(**Note:** Creating a simple diagram in a tool like diagrams.net or PowerPoint and adding it here is highly recommended.)*
 
 ## Implementation Details
 
@@ -49,9 +44,8 @@ This repository contains the implementation of a CLIP-style dual-encoder model f
 
 The final output is an interactive web demo built with Gradio, where a user can upload an image and provide a list of custom text labels to receive a zero-shot prediction.
 
-![Gradio Demo Screenshot](link_to_your_demo_screenshot.png)
 ![alt text](<Screenshot 2025-09-30 235236.png>)
-*(**Note:** You should take a screenshot of your working Gradio interface and add it to your repository, then replace the link above.)*
+
 
 ## Project Overview
 
@@ -68,9 +62,6 @@ The model is composed of two main pathways that are trained in parallel:
 2.  **Text Encoder**: A pre-trained **DistilBERT** model (from Hugging Face `transformers`) is used to extract feature embeddings from text captions. The embedding corresponding to the `[CLS]` token is used, producing a 768-dimensional vector.
 
 3.  **Projection Heads**: Two separate Multi-Layer Perceptrons (MLPs) are attached to the outputs of the encoders. These heads project the image and text features into a shared, lower-dimensional space (256 dimensions), where their similarity can be directly compared using cosine similarity.
-
-![Model Architecture Diagram](link_to_your_architecture_diagram.png)
-*(**Note:** Creating a simple diagram in a tool like diagrams.net or PowerPoint and adding it here is highly recommended.)*
 
 ## Implementation Details
 
@@ -169,4 +160,5 @@ This project is designed for scalability, and its accuracy can be significantly 
     Run the cells in the `.ipynb` notebook in order. The training loop will execute and save the best model checkpoint based on validation performance.
 
 4.  **Launch the Demo:**
+
     The final cell in the notebook will launch an interactive Gradio web interface for performing zero-shot classification on your own images.
